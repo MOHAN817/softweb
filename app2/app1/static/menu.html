@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mohan Restaurant - Menu</title>
+    <link rel="icon" href="logos.jpg">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #2c3e50;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        }
+        .navbar a {
+            float: left;
+            color: #ecf0f1;
+            padding: 18px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .navbar a:hover,
+        .navbar a.active {
+            background: #34495e;
+            color: #1abc9c;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 950px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+            border-bottom: 3px solid #1abc9c;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        /* MENU GRID */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        /* MENU ITEM */
+        .menu-item {
+            background: #ecf0f1;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .menu-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 3px solid #1abc9c;
+        }
+
+        /* ITEM CONTENT */
+        .menu-content {
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .menu-content h3 {
+            color: #16a085;
+            margin: 15px 0 10px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .menu-content p {
+            font-size: 16px;
+            color: #555;
+            margin: 0;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
+    </div>
+
+    <!-- MENU SECTION -->
+    <div class="container">
+        <h2>Menu</h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <img src="Margherita-Pizza.jpg" alt="Margherita Pizza">
+                <div class="menu-content">
+                    <h3>Margherita Pizza</h3>
+                    <p>₹250</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="chicken burger.png" alt="Grilled Chicken Burger">
+                <div class="menu-content">
+                    <h3>Grilled Chicken Burger</h3>
+                    <p>₹180</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pasta.png" alt="Pasta Alfredo">
+                <div class="menu-content">
+                    <h3>Pasta Alfredo</h3>
+                    <p>₹220</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="burger.png" alt="Veggie Burger">
+                <div class="menu-content">
+                    <h3>Veggie Burger</h3>
+                    <p>₹150</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="salad.png" alt="Caesar Salad">
+                <div class="menu-content">
+                    <h3>Classic Caesar Salad</h3>
+                    <p>₹120</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="cake.png" alt="Chocolate Lava Cake">
+                <div class="menu-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>₹90</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
